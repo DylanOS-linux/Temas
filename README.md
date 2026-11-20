@@ -1,89 +1,97 @@
-# DylanOS Themes
+<h1 align="center">DylanOS Temas</h1>
 
-**Repositorio oficial de temas visuales y personalización del ecosistema DylanOS.**
+<p align="center">
+  <strong>Temas visuales y recursos de personalización del ecosistema DylanOS.</strong><br>
+  Identidad Crimson aplicada a Plasma, GTK, SDDM, GRUB y Plymouth.
+</p>
 
-DylanOS Themes reúne recursos de personalización diseñados para transformar y ampliar la experiencia visual de DylanOS, manteniendo la coherencia estética, la accesibilidad y la identidad del proyecto.
-
-## 🎨 Contenido
-
-El repositorio puede incluir:
-
-- **Desktop Themes:** temas completos para el entorno de escritorio.
-- **Color Schemes:** esquemas de colores y paletas.
-- **Icons:** paquetes de iconos.
-- **Cursors:** temas de cursores.
-- **Window Decorations:** decoraciones y estilos de ventanas.
-- **Plasma Styles:** estilos visuales para KDE Plasma.
-- **Wallpapers:** fondos de pantalla oficiales.
-- **GTK Themes:** temas para aplicaciones GTK.
-- **Custom Themes:** experiencias visuales especiales del ecosistema DylanOS.
-
-## 📁 Estructura
-
-```text
-DylanOS-Themes/
-├── README.md
-├── LICENSE
-├── themes/
-│   ├── desktop/
-│   ├── plasma/
-│   ├── gtk/
-│   └── custom/
-├── color-schemes/
-├── icons/
-├── cursors/
-├── wallpapers/
-├── window-decorations/
-├── previews/
-└── documentation/
-```
-
-## 🖥️ Compatibilidad
-
-Los temas se desarrollan priorizando DylanOS y sus tecnologías de escritorio.
-
-La compatibilidad dependerá de los componentes utilizados, las versiones de KDE Plasma y las dependencias de cada tema.
-
-Cada recurso deberá incluir información sobre sus requisitos y compatibilidad.
-
-## 🧩 Filosofía de diseño
-
-Los recursos visuales deben respetar los siguientes principios:
-
-- Consistencia visual.
-- Identidad propia de DylanOS.
-- Accesibilidad y legibilidad.
-- Optimización de recursos.
-- Compatibilidad con el ecosistema.
-- Facilidad de instalación y mantenimiento.
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas.
-
-Antes de enviar una contribución:
-
-1. Comprueba que el recurso funciona correctamente.
-2. Incluye capturas de pantalla cuando corresponda.
-3. Documenta los requisitos y dependencias.
-4. Utiliza nombres de archivos descriptivos.
-5. Envía los cambios mediante Pull Requests.
-
-## 📜 Licencia
-
-Este repositorio utiliza **GNU General Public License v3.0 (GPL-3.0)**, salvo que un recurso incluya una licencia independiente debidamente indicada.
-
-Consulta el archivo `LICENSE` para conocer los términos de distribución y modificación.
-
-## 🔗 DylanOS Ecosystem
-
-DylanOS Themes forma parte del ecosistema oficial de DylanOS.
-
-- **DylanOS:** Sistema operativo principal.
-- **DylanOS Apps:** Aplicaciones del ecosistema.
-- **DylanOS Themes:** Personalización y experiencias visuales.
-- **DylanOS Branding:** Identidad visual y recursos oficiales.
+<p align="center">
+  <a href="https://www.debian.org/"><img src="https://img.shields.io/badge/base-Debian%2013-A81D33?style=flat-square&logo=debian&logoColor=white" alt="Base Debian 13"></a>
+  <a href="https://kde.org/plasma-desktop/"><img src="https://img.shields.io/badge/escritorio-KDE%20Plasma%206-1D99F3?style=flat-square&logo=kde&logoColor=white" alt="Escritorio KDE Plasma 6"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/licencia-GPL--3.0--or--later-blue?style=flat-square" alt="Licencia GPL-3.0-or-later"></a>
+</p>
 
 ---
 
-**DylanOS — Your system, your experience.**
+## Acerca de este repositorio
+
+Este repositorio reúne los temas y recursos de personalización de DylanOS. Cada tema aplica la identidad visual Crimson a una parte del sistema y mantiene la coherencia estética, la legibilidad y la compatibilidad con KDE Plasma 6.
+
+Los temas se diseñan para DylanOS y sus tecnologías de escritorio. La compatibilidad con otras distribuciones depende de los componentes utilizados, de la versión de Plasma y de las dependencias de cada recurso.
+
+## Contenido
+
+| Directorio | Contenido |
+|---|---|
+| [`aurorae/`](aurorae/) | Decoraciones de ventanas para KWin (`DylanOS-Crimson`, `DylanOS-Crimson-Light`) |
+| [`colors/`](colors/) | Esquemas de color de Plasma (`DylanOSDark`, `DylanOSLight`) |
+| [`grub/`](grub/) | Tema del cargador de arranque GRUB |
+| [`gtk/`](gtk/) | Temas GTK 3 y GTK 4 (`DylanOS-Crimson`, `DylanOS-Crimson-Light`) |
+| [`icons/`](icons/) | Paquete de iconos `DylanIcons-Crimson` |
+| [`lookandfeel/`](lookandfeel/) | Paquete de escritorio `org.dylanos.crimson` |
+| [`plasma/`](plasma/) | Estilos y widgets de Plasma (`DylanOS-Crimson`, `DylanOS-Crimson-Glass`) |
+| [`plymouth/`](plymouth/) | Tema de arranque gráfico `DylanOS-Plymouth` |
+| [`sddm/`](sddm/) | Pantalla de inicio de sesión `DylanOS-SDDM` |
+
+Cada recurso documenta sus requisitos y su proceso de instalación en su propio directorio cuando corresponde.
+
+## Estructura
+
+```text
+Temas/
+├── aurorae/          # Decoraciones de ventanas
+├── colors/           # Esquemas de color
+├── grub/             # Tema de GRUB
+├── gtk/              # Temas GTK
+├── icons/            # Iconografía
+├── lookandfeel/      # Paquete de escritorio Plasma
+├── plasma/           # Estilos y widgets de Plasma
+├── plymouth/         # Arranque gráfico
+└── sddm/             # Inicio de sesión
+```
+
+## Instalación
+
+Cada tema se instala en la ruta que corresponde a su tipo. Los recursos de Plasma, GTK, iconos y cursores se copian al directorio de usuario o del sistema, y los de arranque (GRUB, Plymouth y SDDM) requieren permisos de administrador.
+
+Antes de instalar, revisa el contenido del tema y sus dependencias. Los temas de arranque pueden afectar al inicio del sistema, por lo que conviene probarlos en una máquina virtual.
+
+## Criterios de diseño
+
+Los recursos visuales mantienen los siguientes principios:
+
+- consistencia entre los componentes del sistema;
+- identidad propia de DylanOS basada en la paleta Crimson;
+- accesibilidad y legibilidad;
+- optimización de recursos;
+- facilidad de instalación y mantenimiento.
+
+La paleta oficial y el logo se publican en el repositorio [Branding](https://github.com/DylanOS-linux/Branding).
+
+## Contribuir
+
+Antes de enviar un tema o una modificación:
+
+1. Comprueba que el recurso funciona en KDE Plasma 6.
+2. Incluye capturas de pantalla cuando corresponda.
+3. Documenta los requisitos y las dependencias.
+4. Usa nombres de archivo descriptivos.
+5. Abre un pull request con el cambio.
+
+## Licencia
+
+Este repositorio se distribuye bajo la [GNU General Public License v3.0](./LICENSE) (GPL-3.0), salvo que un recurso incluya una licencia independiente debidamente indicada. Consulta el archivo [`LICENSE`](./LICENSE) para conocer los términos de distribución y modificación.
+
+## Ecosistema DylanOS
+
+| Repositorio | Contenido |
+|---|---|
+| [DylanOS](https://github.com/dylanneymarmontalvo2014-lgtm/DylanOS) | Sistema operativo y desarrollo principal |
+| [Apps](https://github.com/DylanOS-linux/Apps) | Aplicaciones y componentes |
+| [Branding](https://github.com/DylanOS-linux/Branding) | Identidad visual y recursos oficiales |
+| [Documentation](https://github.com/DylanOS-linux/Documentation) | Documentación técnica |
+| [Temas](https://github.com/DylanOS-linux/Temas) | Temas y personalización |
+
+---
+
+<p align="center"><sub>DylanOS — Tu sistema, tu experiencia.</sub></p>
